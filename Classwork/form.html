@@ -58,53 +58,54 @@
                 <span >0</span>% Complete
               </div>
         </div>
+        
+        <h2>Important points about jQuery</h2>
+        <ol>
+            <li>Ready Function</li>
+            <li>Selectors</li>
+            <li>Manipulation
+                <ul>
+                    <li>css</li>
+                    <li>html</li>
+                    <li>appending, deleting, etc.</li>
+                </ul>
+            </li>
+            <li>Events</li>
+            <li>Traversing</li>
+        </ol>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-    
-        (function($){
-            $(function(){
+      (function($){
+        $(function(){
+          
+          $("button").on('click', function(e){
+            var self = this;
+            //$(self).css({display: "none"});
+            $(self).prop("disabled", true).html("Working...");
+            var per = 0;
+            var interval = setInterval(function(){
+              per += 5;
+              $(".progress-bar").css("width", per + "%");
+              $(".progress-bar span").text(per);
+              if(per >= 100){
+                clearInterval(interval);
                 
-                
-                $("button").on("click",function(e){
-                   var self=this;
-                    //$(this).css({display: "none"});
-                    
-                    $(self).prop("disabled", true).html("Working...");
-                    
-                    var per = 0;
-                
-                    var interval=setInterval(function(){
-                        per += 2;
-                        $(".progress-bar").css("width",per+"%");
-                        $(".progress-bar span");
-                        
-                        if(per >= 100){
-                            clearInterval(interval);
-                            $("input").css({backgroundColor: "#FFAAAA" });
-                            $(self).prop ("disabled", false).html("TRYAGAINNNN");
-                            if($("#txtAmount").val()  ){
-                                
-                            }
-                        }
-                    }, 200)
-                     return false;
-
-                 
-                    
-                   
-                
-                
-                
-                
-            })
+                if( !$("#txtAmount").val() ){
+                  $("input").css({ backgroundColor: "#FFAAAA"});
+                  $(self).prop("disabled", false).html("Try Again");
+                }else{
+                  // Display success
+                  $("form").prepend("<div class='alert alert-success'>Yay you did it</div> ");
+                }
+              }
+            }, 200);
+            return false;
+          });
         });
-    
-            
-        })(JQuery);
-    
+      })(jQuery);
     </script>
   </body>
 </html>
