@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div id="title">
-                     <h1 style=" padding-top: 35px;  color: white;">Live Healthier<small style="color: white;">Live Better</small></h1>
+                     <h1 style=" padding-top: 35px;  color: white;">Live Healthier<small style="color: white;">live better</small></h1>
 
                 </div>
                 <div id="buttons" style="padding-top: 50px">

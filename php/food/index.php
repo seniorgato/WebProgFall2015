@@ -1,21 +1,23 @@
-<?php 
-
-    $name= 'Erik Bates'; /*'' are string literals*/
-    $message= "Welcome $name"; /*"" evaluates whats in the string*/
+<?php
+    $name = 'Moshe Plotkin';
+    $message = "Welcome $name";
     
-    $person = array('Name' => $name, 'Age' => 21.5, 'CalorieGoal' => 2000 );
+    $person = array( 'Name' => $name, 'Age' => 38, CallorieGoal => 2000 );
+    
     $food = array(
-        
-        array('Name'=>'Breakfast', 'Time'=> strtotime("one hour ago"), Calories=> 400),
-        array('Name'=>'Lunch', 'Time'=> strtotime("now"), Calories=> 800),
-        array('Name'=>'Snack', 'Time'=> strtotime("now"), Calories=> 250),
-        array('Name'=>'Dinner', 'Time'=> strtotime("6pm"), Calories=> 800),
-        
+        array( 'Name' => 'Breakfast', 'Time' => strtotime("-1 hour"), Callories => 400 ),
+        array( 'Name' => 'Lunch', 'Time' => strtotime("now"), Callories => 800 ),
+        array( 'Name' => 'Snack', 'Time' => strtotime("now + 1 hour"), Callories => 400 ),
+        array( 'Name' => 'Dinner', 'Time' => strtotime("6pm"), Callories => 400 ),
         );
-    $total =0;
-    foreach($food as $meal){  /*flipped around. the meal is the iterative variable*/
+        
+    $food[] = $_REQUEST;
+    
+    $total = 0;
+    foreach ($food as $meal) {
         $total += $meal['Calories'];
     }
+    
     
 ?>
 <!DOCTYPE html>
@@ -34,28 +36,24 @@
     <div class="container">
             <h1>Food Intake</h1>
             <h2><?=$message?></h2>
-            <div class="panel panel-success">Successful Butts</div>
-            <div class= "panel-heading">Your Data</div>
-            <div class = "panel-body">
-                <dt>
-                    Name
-                </dt>
-                <dd><?=$person['Name']?></dd>
-                <dt>
-                    Age
-                </dt>
-                <dd><?=$person['Age']?></dd>
-                <dt>
-                    Today's Intake
-                </dt>
-                <dd><?=$total?></dd>
+            <div class="panel panel-success">
+                <div class="panel-heading">Your Data</div>
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt>Name</dt>
+                        <dd><?=$person['Name']?></dd>
+                        <dt>Age</dt>
+                        <dd><?=$person['Age']?></dd>
+                        <dt>Goal</dt>
+                        <dd><?=$person['CallorieGoal']?></dd>
+                        <dt>Today's Intake</dt>
+                        <dd><?=$total?></dd>
+                    </dl>
+                </div>
             </div>
-            
-            
-            
       <div class="row">
         <div class="col-md-8 col-xs-10">
-            <a href="#" class="btn btn-success">
+            <a href="edit.php" class="btn btn-success">
                 <i class="glyphicon glyphicon-plus"></i>
                 New Record
             </a>
@@ -67,36 +65,21 @@
             <table class="table table-condensed table-striped table-bordered table-hover">
               <thead>
                 <tr>
-                 <th>#</th>
-                  <th>Time</th>
+                  <th>#</th>
                   <th>Name</th>
-                  <th>Calories</th>
-                  
+                  <th>Time</th>
+                  <th>Callories</th>
                 </tr>
               </thead>
-              
               <tbody>
-                  <?php foreach($food as $meal):?>
+                <?php foreach($food as $i => $meal): ?>
                 <tr>
-                  <th scope="row">1</th>
-                  <td><?=$meal ['Name']?></td>
-                  <td><?=$meal ['Time']?></td>
-                  <td><?=$meal ['Calories']?></td>
-
+                  <th scope="row"><?=$i?></th>
+                  <td><?=$meal['Name']?></td>
+                  <td><?=date("M d Y  h:i:sa", $meal['Time'])?></td>
+                  <td><?=$meal['Callories']?></td>
                 </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-                <?php endforeach;?>
+                <?php endforeach; ?>
               </tbody>
             </table>  
           
@@ -108,8 +91,7 @@
             <div class="alert alert-danger" role="alert">
                 Oh no! You messed up.
             </div>
-           
-          
+
         </div>
       </div>
       
@@ -118,25 +100,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    
-      (function(){
-        $(".progress-bar").css({width: $(".progress").width() * .75});
-        
-        SomeName = function (){
-          $(".progress-bar").css({width: MyObject.intendedWidth}, 2000);
-        }
-        
-        var MyObject = {
-          hello: "world",
-          intendedWidth: $(".progress-bar").width() * .75
-        };
-        
-        
-      })()
-      //SomeName();
-      
-      setTimeout( SomeName, 1000);
-    </script>
   </body>
 </html>
