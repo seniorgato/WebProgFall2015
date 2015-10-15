@@ -5,7 +5,7 @@
     if($_POST){
         unset($friends[$_POST['id']]);
         $_SESSION['friends'] = $friends;
-        header('Location: ./');
+        header('Location: ./indexFriends.php');
     }
     
     

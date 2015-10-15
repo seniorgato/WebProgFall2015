@@ -5,7 +5,7 @@
     if($_POST){
         unset($exercise[$_POST['id']]);
         $_SESSION['exercise'] = $exercise;
-        header('Location: ./');
+        header('Location: ./Exercise.php');
     }
     
     

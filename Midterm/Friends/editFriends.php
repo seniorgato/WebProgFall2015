@@ -14,7 +14,7 @@
             $friends[] = $_POST;
         }
         $_SESSION['friends'] = $friends;
-        header('Location: ./');
+        header('Location: ./indexFriends.php');
     }
     
     if(isset($_GET['id'])){
