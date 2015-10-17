@@ -9,13 +9,7 @@
         <title>Health&Fitness</title>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="Home.css">
-        <style>
-            .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-                width: 70%;
-                margin: auto;
-            }
-        </style>
+        <link rel="stylesheet" href="index.css">
     </head>
     
     <body>
@@ -23,34 +17,51 @@
             <div class="jumbotron container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href = "http://cs.newpaltz.edu/~n02633949/FitnessTracker/Home.php">
-                            <img class="iconlogo1" src="http://djabcd.biz/wp-content/uploads/2015/09/logo_healthfitness.png"></img>
+                        <a href = "http://cs.newpaltz.edu/~n02633949/FitnessTracker/index.php">
+                            <img class="iconlogo1" src=""></img>
                         </a>
                     </div>
                     <div class="col-md-5">
-                        <nav class="nav navbar-default">
-                            <ul class="nav navbar-nav">
-                                <li><a href="http://cs.newpaltz.edu/~n02633949/FitnessTracker/Food.php">Food</a>
-
-                                </li>
-                                <li><a href="#">Exercise</a>
-
-                                </li>
-                                <li><a href="http://cs.newpaltz.edu/~n02633949/FitnessTracker/Progress.php">Progress</a>
-
-                                </li>
-                                <li><a href="#">Community</a>
-
-                                </li>
-                                <li><a href="#">Log In</a>
-
-                                </li>
-                            </ul>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                            <div class="container">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="index.php">
+                                        Fitness Tracker
+                                    </a>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="about.php">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.php">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="calorieLog.php">Calorie Log</a>
+                                        </li>
+                                        <li>
+                                            <a href="exerciseLog.php">Exercise Log</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </div>
+                            <!-- /.container -->
                         </nav>
+
                     </div>
                 </div>
                 <div id="title">
-                     <h1 style=" padding-top: 35px;  color: white;">Live Healthier<small style="color: white;">live better</small></h1>
+                     <h1 style=" padding-top: 35px;  color: white;">Live Healthier <small style="color: white;">Live Better</small></h1>
 
                 </div>
                 <div id="buttons" style="padding-top: 50px">
@@ -80,9 +91,9 @@
                     <div class="thumbnail">
                         <img src="http://www.bodyforwife.com/wp-content/uploads/2015/09/exercise.jpg" alt="...">
                         <div class="caption">
-                             <h3>Exercise Guide</h3>
+                             <h3>Exercise Log</h3>
 
-                            <p></p>
+                            <p>Workout and Record your activities in this state of the art log!</p>
                             <p><a href="#" class="btn btn-primary" role="button">View Now</a> 
                         </div>
                     </div>
@@ -91,7 +102,7 @@
                     <div class="thumbnail">
                         <img src="http://www.mamashealth.com/nutrition/images/calories.jpg" alt="...">
                         <div class="caption">
-                             <h3>Progress</h3>
+                             <h3>Calorie Log</h3>
 
                             <p>Keeping Track of all your fitness and nutritional progress!</p>
                             <p><a href="#" class="btn btn-primary" role="button">View Now</a> 
@@ -114,39 +125,14 @@
                     </div>
                 </div>
             </div>
-            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="http://easylivingmom.com/wp-content/uploads/2013/01/Healthy-Eating-Tips14.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="http://sunshinecoast-resort.com/wp-content/uploads/2015/04/specials-fitness01.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="http://s7.postimg.org/73r8d6e0r/001_14_Good_Morning_Sunrise_oie_glitters.gif" alt="ELIETZER!!!!">
-                    </div>
-                    <div class="item">
-                        <img src="http://images.relakjoe.com/github/photosharing/wp-content/uploads/formidable/20141010020041_mike-tyson-quotes-8-550x370.jpg" alt="">
-                    </div>
-                </div>
-                <!-- Left and right controls --> <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-
+            <div>
+                
+                
             </div>
+            
+            
+            
+            
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

@@ -34,89 +34,52 @@
     <link href=
     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
     rel="stylesheet">
-    <link href="Exercise.css" rel="stylesheet">
+    <link href="exerciseLog.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-       <a href = "http://cs.newpaltz.edu/~n02633949/FitnessTracker/Home.php">
-                            <img class="iconlogo1" src="http://djabcd.biz/wp-content/uploads/2015/09/logo_healthfitness.png"></img>
-                        </a>
 
         <div>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-
-                    <div class="navbar-header">
-                        <button class="navbar-toggle collapsed" data-target=
-                        "#bs-example-navbar-collapse-1" data-toggle="collapse"
-                        type="button"><span class="sr-only">Toggle
-                        navigation</span> <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> <span class=
-                        "icon-bar"></span></button> <a class="navbar-brand"
-                        href="http://cs.newpaltz.edu/~n02633949/FitnessTracker/Home.php" rel="home" title="tddesigns">Home</a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-
-                    <div class="collapse navbar-collapse" id=
-                    "bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="http://cs.newpaltz.edu/~n02633949/FitnessTracker/Food.php">Food</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Exercise</a>
-                            </li>
-
-                            <li>
-                                <a href="http://cs.newpaltz.edu/~n02633949/FitnessTracker/Progress.php">Progress</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Community</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Log In</a>
-                            </li>
-                        </ul>
-
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="#">Donations</a>
-                            </li>
-
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle=
-                                "dropdown" href="#">Related Websites
-                                <span class="caret"></span></a>
-
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Fitness.com</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Nutrition.com</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">com.com</a>
-                                    </li>
-
-                                    <li class="divider"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                            <div class="container">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="index.php">
+                                        Fitness Tracker
+                                    </a>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="about.php">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.php">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="calorieLog.php">Calorie Log</a>
+                                        </li>
+                                        <li>
+                                            <a href="exerciseLog.php">Exercise Log</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </div>
+                            <!-- /.container -->
+                        </nav>
         </div>
 
-        <div id="jt" class="jumbotron">
-            <h1>Workout Today<small style="color: white">For a Better
+        <div id="jt" class="jumbotron container-fluid">
+            <h1>Workout Today <small style="color: white">For a Better
             Tomorrow</small></h1><br>
         </div>
 

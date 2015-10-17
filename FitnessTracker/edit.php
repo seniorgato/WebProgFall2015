@@ -14,7 +14,7 @@
             $exercise[] = $_POST;
         }
         $_SESSION['exercise'] = $exercise;
-        header('Location: ./Exercise.php');
+        header('Location: ./exerciseLog.php');
     }
     
     if(isset($_GET['id'])){
