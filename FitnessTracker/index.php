@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Health&Fitness</title>
+        <title>FitnessTracker</title>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="index.css">
@@ -40,7 +40,7 @@
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav">
                                         <li>
-                                            <a href="about.php">About</a>
+                                            <a href="aboutUs.php">About</a>
                                         </li>
                                         <li>
                                             <a href="contact.php">Contact</a>
@@ -83,7 +83,7 @@
                              <h3>Food Guide & Recipe</h3>
 
                             <p>Our board of nutritionist giveaway tips and tricks to living a healthier life</p>
-                            <p><a href="#" class="btn btn-primary" role="button">View Now</a> 
+                            <p><a href="http://www.healthyfood.co.nz/" class="btn btn-primary" role="button">View Now</a> 
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                              <h3>Exercise Log</h3>
 
                             <p>Workout and Record your activities in this state of the art log!</p>
-                            <p><a href="#" class="btn btn-primary" role="button">View Now</a> 
+                            <p><a href="exerciseLog.php" class="btn btn-primary" role="button">View Now</a> 
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                              <h3>Calorie Log</h3>
 
                             <p>Keeping Track of all your fitness and nutritional progress!</p>
-                            <p><a href="#" class="btn btn-primary" role="button">View Now</a> 
+                            <p><a href="calorieLog.php" class="btn btn-primary" role="button">View Now</a> 
                         </div>
                     </div>
                 </div>

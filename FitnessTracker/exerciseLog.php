@@ -30,7 +30,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Exercise</title><!-- Bootstrap -->
+    <title>FitnessTracker</title><!-- Bootstrap -->
     <link href=
     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
     rel="stylesheet">
@@ -59,7 +59,7 @@
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav">
                                         <li>
-                                            <a href="about.php">About</a>
+                                            <a href="aboutUs.php">About</a>
                                         </li>
                                         <li>
                                             <a href="contact.php">Contact</a>
