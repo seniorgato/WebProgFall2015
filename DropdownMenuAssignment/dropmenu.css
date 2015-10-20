@@ -1,0 +1,62 @@
+body{
+	
+}
+nav {
+  margin: 0 auto;
+  height: auto;
+  display: inline-block;
+  background: blue;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  display: inline-block;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 20px 0 0;
+  float: left;
+  display: inline-block;
+}
+
+li > a:after {
+  content: ' »';
+}
+
+
+li > a:only-child:after {
+  content: '';
+}
+
+nav ul li a {
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text: bold;
+  }
+
+nav ul li a:hover {
+  opacity: 0.5;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  background: blue;
+  float: left;
+}
+
+nav ul li ul li {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+nav ul li:hover ul {
+  display: block;
+}
