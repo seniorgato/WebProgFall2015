@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $name = 'Aston Sanders';
+    $name = 'Erik Bates';
     $message = "Welcome $name";
     
     $person = array('Name' => $name, 'Age' => 21, CallorieGoal => 2000);
