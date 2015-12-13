@@ -3,7 +3,7 @@ require_once '../inc/global.php';
 
 class Person {
     public static function Get($id = null){
-        $sql = "SELECT * FROM Persons";
+        $sql = "SELECT * FROM c9";
         
 		if($id){
 			$sql .= " WHERE id=$id ";

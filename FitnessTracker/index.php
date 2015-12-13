@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>FitnessTracker</title>
+        <title>Fitness Tracker</title>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="index.css">
@@ -68,8 +68,8 @@
 
                 </div>
                 <div id="buttons" style="padding-top: 50px">
-                    <button type="button" class="btn btn-primary btn-lg active"> <a href="login.php">Sign Up</a></button>
-                    <button type="button" class="btn btn-default btn-lg active"><a href="login.php">Log in</a></button>
+                    <button type="button" class="btn btn-primary btn-lg "> <a href="login.php">Sign Up</a></button>
+                    <button type="button" class="btn btn-default btn-lg "><a href="login.php">Log in</a></button>
                 </div>
             </div>
             <div id="missionstatement">

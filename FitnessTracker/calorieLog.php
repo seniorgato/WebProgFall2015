@@ -1,3 +1,27 @@
+<?php
+session_start();
+    $name = 'Erik Bates';
+    $message = "Welcome $name";
+    
+    $person = array( 'Name' => $name, 'Age' => 21, CallorieGoal => 2000 );
+    
+    $food = $_SESSION['food'];
+    if(!$food){
+      $_SESSION['food'] = $food = array(
+          array( 'Name' => 'Breakfast', 'Time' => strtotime("-1 hour"), callories => 400 ),
+          array( 'Name' => 'Lunch', 'Time' => strtotime("now"), callories => 800 ),
+          array( 'Name' => 'Snack', 'Time' => strtotime("now + 1 hour"), callories => 400 ),
+          array( 'Name' => 'Dinner', 'Time' => strtotime("6pm"), callories => 400 ),
+          );
+    }
+        
+    $total = 0;
+    foreach ($food as $meal) {
+        $total += $meal['callories'];
+    }
+    
+    
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,23 +39,7 @@
 </head>
 
 <body>
-            <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '1486539894986392',
-              xfbml      : true,
-              version    : 'v2.5'
-            });
-          };
-        
-          (function(d, s, id){
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) {return;}
-             js = d.createElement(s); js.id = id;
-             js.src = "//connect.facebook.net/en_US/sdk.js";
-             fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-        </script>
+            
     <div class="container">
 
         <div>
@@ -81,10 +89,82 @@
         </div>
 
         <div id="Progress of Account">
-            <h1>Almost done with Account Info</h1>
+        </div>
+        <div>
+            <h1>Food Intake</h1>
+            <h2><?=$message?></h2>
+            <div class="panel panel-success">
+                <div class="panel-heading">Your Data</div>
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt>Name</dt>
+                        <dd><?=$person['Name']?></dd>
+                        <dt>Age</dt>
+                        <dd><?=$person['Age']?></dd>
+                        <dt>Goal</dt>
+                        <dd><?=$person['CallorieGoal']?></dd>
+                        <dt>Today's Intake</dt>
+                        <dd><?=$total?></dd>
+                    </dl>
+                </div>
+            </div>
+      <div class="row">
+        <div class="col-md-8 col-xs-10">
+            <a href="edit2.php" class="btn btn-success">
+                <i class="glyphicon glyphicon-plus"></i>
+                New Record
+            </a>
+            <a href="#" class="btn btn-danger">
+                <i class="glyphicon glyphicon-trash"></i>
+                Delete All
+                <span class="badge"><?=count($food)?></span>
+            </a>
+            <br />
+            <table class="table table-condensed table-striped table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Time</th>
+                  <th>callories</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach($food as $i => $meal): ?>
+                <tr>
+                  <th scope="row">
+                    <div class="btn-group" role="group" aria-label="...">
+                      <a href="" title="View" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-eye-open"></i></a>
+                      <a href="edit2.php?id=<?=$i?>" title="edit2" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit2"></i></a>
+                      <a href="delete2.php?id=<?=$i?>" title="delete2" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
+                    </div>
+                  </th>
+                  <td><?=$meal['Name']?></td>
+                  <td><?=date("M d Y  h:i:sa", $meal['Time'])?></td>
+                  <td><?=$meal['callories']?></td>
+                </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>  
+          
+        </div>
+        <div class="col-md-4 col-xs-10">
+            <div class="alert alert-success" role="alert">
+                You did well
+            </div>
+            <div class="alert alert-danger" role="alert">
+                Oh no! You messed up.
+            </div>
 
+        </div>
+      </div>
+      
+        </div>
             
-    </div><script src=
+    </div>
+    
+    
+    <script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <script src=
 "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <script type="text/javascript"></script>
 </body>
