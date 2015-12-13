@@ -44,6 +44,9 @@
                                         <li>
                                             <a href="exerciseLog.php">Exercise Log</a>
                                         </li>
+                                        <li>
+                                            <a href="login.php">Sign/Log In</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- /.navbar-collapse -->
@@ -56,7 +59,7 @@
             <div>
                 <h1> Contact Us</h1>
                 
-                <p>Give me your $ and Email and MAYBE i'll call you bae</p>
+                <p>Contact me at 845 674 1405</p>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
