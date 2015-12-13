@@ -51,6 +51,9 @@
                                         <li>
                                             <a href="exerciseLog.php">Exercise Log</a>
                                         </li>
+                                        <li>
+                                            <a href="login.php">Sign/Log In</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- /.navbar-collapse -->
@@ -65,8 +68,8 @@
 
                 </div>
                 <div id="buttons" style="padding-top: 50px">
-                    <button type="button" class="btn btn-primary btn-lg active">Sign Up</button>
-                    <button type="button" class="btn btn-default btn-lg active">Log In</button>
+                    <button type="button" class="btn btn-primary btn-lg active"> <a href="login.php">Sign Up</a></button>
+                    <button type="button" class="btn btn-default btn-lg active"><a href="login.php">Log in</a></button>
                 </div>
             </div>
             <div id="missionstatement">

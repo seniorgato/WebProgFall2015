@@ -11,10 +11,27 @@
     <link href=
     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
     rel="stylesheet">
-    <link href="Progress.css" rel="stylesheet">
+    <link href="calorieLog.css" rel="stylesheet">
 </head>
 
 <body>
+            <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1486539894986392',
+              xfbml      : true,
+              version    : 'v2.5'
+            });
+          };
+        
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
     <div class="container">
 
         <div>
@@ -47,6 +64,9 @@
                                         <li>
                                             <a href="exerciseLog.php">Exercise Log</a>
                                         </li>
+                                        <li>
+                                            <a href="login.php">Sign/Log In</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- /.navbar-collapse -->
@@ -63,36 +83,7 @@
         <div id="Progress of Account">
             <h1>Almost done with Account Info</h1>
 
-            <div class="progress">
-                <div class="progress-bar" style="width: 60%;">
-                    60%
-                </div>
-            </div>
-        </div>
-
-        <div class="progress">
-            <div class="progress-bar progress-bar-success" style="width: 40%">
-                <span class="sr-only">40% Complete (success)</span> Calorie
-            </div>
-        </div>
-
-        <div class="progress">
-            <div class="progress-bar progress-bar-info" style="width: 20%">
-                <span class="sr-only">20% Complete</span> Exercise for the Day
-            </div>
-        </div>
-
-        <div class="progress">
-            <div class="progress-bar progress-bar-warning" style="width: 60%">
-                <span class="sr-only">60% Complete (warning)</span> Weight
-            </div>
-        </div>
-
-        <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 80%">
-                <span class="sr-only">80% Complete (danger)</span> Consumption
-            </div>
-        </div>
+            
     </div><script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <script src=
 "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <script type="text/javascript"></script>

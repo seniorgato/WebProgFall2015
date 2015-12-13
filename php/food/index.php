@@ -1,9 +1,9 @@
 <?php
 session_start();
-    $name = 'Moshe Plotkin';
+    $name = 'Erik Bates';
     $message = "Welcome $name";
     
-    $person = array( 'Name' => $name, 'Age' => 38, CallorieGoal => 2000 );
+    $person = array( 'Name' => $name, 'Age' => 21, CallorieGoal => 2000 );
     
     $food = $_SESSION['food'];
     if(!$food){

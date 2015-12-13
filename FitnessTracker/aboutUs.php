@@ -44,6 +44,9 @@
                                         <li>
                                             <a href="exerciseLog.php">Exercise Log</a>
                                         </li>
+                                        <li>
+                                            <a href="login.php">Sign/Log In</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- /.navbar-collapse -->
