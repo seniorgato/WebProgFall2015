@@ -36,6 +36,7 @@ session_start();
     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
     rel="stylesheet">
     <link href="calorieLog.css" rel="stylesheet">
+            
 </head>
 
 <body>
@@ -90,6 +91,11 @@ session_start();
 
         <div id="Progress of Account">
         </div>
+        
+        <div>
+            
+        </div>
+        
         <div>
             <h1>Food Intake</h1>
             <h2><?=$message?></h2>

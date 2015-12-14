@@ -32,6 +32,45 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" type="text/css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+          $(function() {
+            var availableTags = [
+              "Apples",
+              "Apricots",
+              "Anchovies",
+              "Bacon",
+              "Banana",
+              "Bread",
+              "Chicken",
+              "Cheese Pizza",
+              "Diced Carrots",
+              "Dried Tomatoes",
+              "Diet Coke",
+              "Devils Food Cake",
+              "Erlang",
+              "Eggplant",
+              "Fortran",
+              "Groovy",
+              "Haskell",
+              "Java",
+              "JavaScript",
+              "Lisp",
+              "Perl",
+              "PHP",
+              "Python",
+              "Ruby",
+              "Scala",
+              "Scheme"
+            ];
+            $( "#tags" ).autocomplete({
+              source: availableTags
+            });
+          });
+          </script>
   </head>
   <body>
     <div class="container">
@@ -46,12 +85,14 @@ session_start();
             </button>
             <h3></h3>
           </div> 
-          <div class="form-group">
+          
+           <div class="form-group">
             <label for="txtName" class="col-sm-2 control-label">Name</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="txtName" name="Name" placeholder="Meal's Name" value="<?=$meal['Name']?>">
+            <div class="col-sm-10 ui-widget" >
+                <input id="tags" placeholder="Enter Meal Name" value="<?=$meal['Name']?>">
             </div>
           </div>
+          
           <div class="form-group">
             <label class="col-sm-2 control-label" for="txtCallories">Callories</label>
             <div class="col-sm-10">
