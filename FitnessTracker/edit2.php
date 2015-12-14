@@ -89,7 +89,7 @@ session_start();
            <div class="form-group">
             <label for="txtName" class="col-sm-2 control-label">Name</label>
             <div class="col-sm-10 ui-widget" >
-                <input id="tags" placeholder="Enter Meal Name" value="<?=$meal['Name']?>">
+                <input id="tags"  class="form-control" name="Name" placeholder="Enter Meal Name" value="<?=$meal['Name']?>">
             </div>
           </div>
           
